@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(주)내일손해사정 | 내 권리로 찾는 공정한 보상</title>
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-noto bg-gray-50">
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <h1 class="text-xl font-bold text-brand-primary">(주)내일손해사정</h1>
+                </div>
+                <div class="hidden md:block">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeTnyShZr6QrpUOo_6xFos4GIg2utMq9fXRJOxh4jvu2-EKFA/viewform?usp=header" 
+                       class="btn-cta inline-flex items-center px-6 py-2 rounded-lg">
+                        <i data-lucide="phone" class="w-4 h-4 mr-2"></i>
+                        무료 상담 신청
+                    </a>
+                </div>
+                <button class="md:hidden mobile-menu-toggle" id="mobileMenuToggle">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+        <div class="mobile-menu hidden md:hidden bg-white border-t" id="mobileMenu">
+            <div class="px-4 py-3">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeTnyShZr6QrpUOo_6xFos4GIg2utMq9fXRJOxh4jvu2-EKFA/viewform?usp=header" 
+                   class="btn-cta block text-center py-3 rounded-lg">
+                    무료 상담 신청
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section bg-gradient-to-br from-blue-50 to-indigo-100 py-16 md:py-24">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <div class="countdown-container mb-8">
+                    <div class="countdown-alert">
+                        <i data-lucide="clock" class="w-8 h-8 mb-2"></i>
+                        <h3 class="text-xl font-bold mb-2">⚠️ 긴급 알림</h3>
+                        <p class="text-sm mb-4">보험금 청구 후 골든타임이 얼마 남지 않았습니다!</p>
+                        <div class="countdown-timer" id="countdownTimer">
+                            <div class="countdown-item">
+                                <span class="countdown-number" id="days">3</span>
+                                <span class="countdown-label">영업일</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span class="countdown-number" id="hours">00</span>
+                                <span class="countdown-label">시간</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span class="countdown-number" id="minutes">00</span>
+                                <span class="countdown-label">분</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span class="countdown-number" id="seconds">00</span>
+                                <span class="countdown-label">초</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h1 class="text-3xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+                    🚨 <strong>보험사가 당신에게 알려주지 않은 비밀!</strong> 내 권리로 찾는 
+                    <span class="text-brand-primary">공정한 보상</span>
+                </h1>
+                
+                <p class="text-lg md:text-xl text-gray-700 mb-8 max-w-4xl mx-auto leading-relaxed">
+                    보험금 청구 후, 보험사 안내를 받았다면 <strong>3영업일 내</strong>가 권리를 지킬 <strong>골든타임</strong>입니다! 
+                    내 돈 한 푼 없이 전문가를 고용하세요.
+                </p>
+                
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeTnyShZr6QrpUOo_6xFos4GIg2utMq9fXRJOxh4jvu2-EKFA/viewform?usp=header" 
+                   class="btn-cta btn-large inline-flex items-center px-8 py-4 rounded-xl text-lg font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                    <i data-lucide="shield-check" class="w-6 h-6 mr-3"></i>
+                    3일 기한! 지금 바로 무료 자격 확인 및 상담 신청
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 md:py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                    1. 혹시, 이런 <span class="text-brand-accent">배상책임 사고</span>를 당하셨나요?
+                </h2>
+                <p class="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                    일상의 예기치 않은 사고, 복잡한 보험 처리 과정에서 불이익 없이 공정한 보상을 받는 것은 당연한 권리입니다. 
+                    다음과 같은 사고들은 결코 남의 이야기가 아닙니다.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-6 mb-12">
+                <div class="case-card bg-gray-50 rounded-xl p-6 border border-gray-200 hover:border-brand-accent transition-colors duration-300">
+                    <div class="flex items-start space-x-4">
+                        <div class="case-icon">
+                            <i data-lucide="utensils" class="w-8 h-8 text-brand-accent"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-900 mb-2">식당·마트 낙상 사고</h3>
+                            <p class="text-gray-600">식당, 마트 등에서 미끄러져 부상을 입은 경우 (영업배상책임)</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="case-card bg-gray-50 rounded-xl p-6 border border-gray-200 hover:border-brand-accent transition-colors duration-300">
+                    <div class="flex items-start space-x-4">
+                        <div class="case-icon">
+                            <i data-lucide="droplets" class="w-8 h-8 text-brand-accent"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-900 mb-2">누수 피해 사고</h3>
+                            <p class="text-gray-600">우리 집 누수로 아래층에 재산 피해를 준 경우 (일상생활배상책임)</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="case-card bg-gray-50 rounded-xl p-6 border border-gray-200 hover:border-brand-accent transition-colors duration-300">
+                    <div class="flex items-start space-x-4">
+                        <div class="case-icon">
+                            <i data-lucide="bike" class="w-8 h-8 text-brand-accent"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-900 mb-2">자전거 충돌 사고</h3>
+                            <p class="text-gray-600">자전거를 타다 행인과 부딪혀 다치게 한 경우</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="case-card bg-gray-50 rounded-xl p-6 border border-gray-200 hover:border-brand-accent transition-colors duration-300">
+                    <div class="flex items-start space-x-4">
+                        <div class="case-icon">
+                            <i data-lucide="heart" class="w-8 h-8 text-brand-accent"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-900 mb-2">반려동물 사고</h3>
+                            <p class="text-gray-600">반려견이 타인을 다치게 한 경우</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <p class="text-gray-600 bg-blue-50 p-4 rounded-lg border-l-4 border-brand-primary">
+                    <i data-lucide="info" class="w-5 h-5 inline mr-2"></i>
+                    이러한 사고들은 모두 '배상책임보험'과 관련 있으며, 전문가의 조력이 결과에 큰 차이를 만듭니다.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 md:py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
+                    3. 보험금 청구의 진실: 손해사정사는 누구 편일까요?
+                </h2>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-xl p-8 shadow-lg mb-8">
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                        보험금을 청구하면 보험사가 손해사정사를 배정하지만, 이들은 보험사의 자회사 소속이거나 위탁받은 업체입니다. 
+                        이들은 보험사와의 관계에서 자유롭기 어렵습니다.
+                    </p>
+                    
+                    <div class="warning-block bg-amber-50 border-l-4 border-amber-400 p-6 rounded-r-lg">
+                        <div class="flex items-start">
+                            <i data-lucide="alert-triangle" class="w-6 h-6 text-amber-600 mr-3 mt-1 flex-shrink-0"></i>
+                            <div>
+                                <h3 class="font-semibold text-amber-800 mb-2">⚠️ 중요한 경고</h3>
+                                <p class="text-amber-700 leading-relaxed">
+                                    이로 인해 공정한 평가보다 보험사에 유리한 방향으로 손해사정이 진행될 수 있으며, 
+                                    이는 곧 소비자가 받아야 할 <strong>정당한 보상금이 축소</strong>될 수 있음을 의미합니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 md:py-20 bg-brand-primary text-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-8">
+                    4. 소비자의 가장 강력한 권리: '손해사정사 선임권'
+                </h2>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white bg-opacity-10 rounded-xl p-8 backdrop-blur-sm">
+                        <div class="mb-4">
+                            <i data-lucide="scale" class="w-12 h-12 text-brand-accent mb-4"></i>
+                            <h3 
+class="text-xl font-semibold mb-3">권리 정의</h3>
+                        </div>
+                        <p class="text-blue-100 leading-relaxed">
+                            금융감독원이 보장하는 법적 권리입니다. 보험사가 지정한 사정사 대신, 
+                            <strong>소비자가 직접 독립 손해사정사를 선임</strong>하여 공정하게 평가받을 수 있습니다.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-brand-accent bg-opacity-20 rounded-xl p-8 border-2 border-brand-accent">
+                        <div class="mb-4">
+                            <i data-lucide="coins" class="w-12 h-12 text-brand-accent mb-4"></i>
+                            <h3 class="text-xl font-semibold mb-3">💰 비용 부담 없음</h3>
+                        </div>
+                        <p class="text-blue-100 leading-relaxed">
+                            가장 중요한 점은, 소비자가 선임하더라도 그 <strong>비용은 상법에 의거하여 보험사가 부담</strong>한다는 것입니다. 
+                            내 돈 한 푼 들이지 않고 내 편에서 일할 전문가를 고용하는 것입니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 md:py-20 bg-gradient-to-br from-green-50 to-emerald-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                혼자 고민하지 마세요
+            </h2>
+            <p class="text-lg text-gray-700 mb-8">
+                전문가에게 지금 바로 무료 상담을 받아보세요.
+            </p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeTnyShZr6QrpUOo_6xFos4GIg2utMq9fXRJOxh4jvu2-EKFA/viewform?usp=header" 
+               class="btn-cta btn-large inline-flex items-center px-8 py-4 rounded-xl text-lg font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                <i data-lucide="message-circle" class="w-6 h-6 mr-3"></i>
+                상담 신청하기
+            </a>
+        </div>
+    </section>
+
+    <section class="py-16 md:py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
+                    5. 당신의 권리, 아는 만큼 보입니다
+                </h2>
+            </div>
+            
+            <div class="space-y-6">
+                <div class="bg-gray-50 rounded-xl p-8 border-l-4 border-brand-primary">
+                    <p class="text-lg text-gray-700 leading-relaxed italic text-center mb-6">
+                        "보험회사로부터 손해사정 진행 안내를 받으셨다면 그냥 지나치지 마십시오."
+                    </p>
+                </div>
+                
+                <div class="text-center space-y-4">
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        이는 단순한 통보가 아니라, 당신의 소중한 권리를 행사할 수 있는 중요한 신호입니다.
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        지금 바로 당신의 상황을 전문가와 상담하고, 잠자는 권리를 깨워 공정한 보상을 받으십시오!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 md:py-24 bg-gray-900 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8">
+                공정한 보상을 위한 마지막 기회
+            </h2>
+            
+            <div class="mb-12">
+                <div class="inline-block bg-red-600 bg-opacity-20 border border-red-500 rounded-xl p-6 mb-8">
+                    <i data-lucide="clock" class="w-8 h-8 text-red-400 mx-auto mb-4"></i>
+                    <p class="text-lg text-red-200 leading-relaxed">
+                        망설이는 순간에도 3영업일의 시간은 흐릅니다. 지금 바로 무료 상담을 신청하세요.
+                    </p>
+                </div>
+            </div>
+            
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeTnyShZr6QrpUOo_6xFos4GIg2utMq9fXRJOxh4jvu2-EKFA/viewform?usp=header" 
+               class="btn-cta btn-large inline-flex items-center px-8 py-4 rounded-xl text-lg font-semibold shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300">
+                <i data-lucide="shield-check" class="w-6 h-6 mr-3"></i>
+                지금 바로 무료 선임 자격 확인하고 전문 상담 받기
+            </a>
+            
+            <div class="mt-8 text-sm text-gray-400">
+                <i data-lucide="mail" class="w-4 h-4 inline mr-2"></i>
+                상담 신청 시 전문가가 직접 연락드립니다
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h3 class="text-xl font-bold mb-2">(주)내일손해사정</h3>
+                <p class="text-gray-400 mb-4">공정한 보상, 정당한 권리 실현</p>
+                <div class="flex justify-center items-center space-x-4 text-sm text-gray-400">
+                    <span>전문 손해사정 서비스</span>
+                    <span>•</span>
+                    <span>무료 상담</span>
+                    <span>•</span>
+                    <span>24시간 접수</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
